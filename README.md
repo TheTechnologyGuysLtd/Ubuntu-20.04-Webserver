@@ -7,5 +7,4 @@ Download this repo to you server
 
 wget https://github.com/TheTechnologyGuysLtd/Webserver.git
 sudo chmod +x install.sh
-
 sudo ./install.sh
