@@ -29,3 +29,5 @@ php7.4-xml <br>
 php7.4-bcmath <br>
 php7.4-mysqli <br>
 php7.4-gd  <br>
+
+The Lets encrypt will ask you a few qestions fill then in to get a free SSl for your domain
