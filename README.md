@@ -8,7 +8,7 @@ This install script is for setting up a server to run the Script MULY found here
 Connect to your server over SSH and run the below command<br><br>
 MUST BE RUN UNDER ROOT<br>
 
-wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Webserver/main/install.sh<br>
+wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh<br>
 sudo chmod +x install.sh<br>
 sudo ./install.sh<br>
 
