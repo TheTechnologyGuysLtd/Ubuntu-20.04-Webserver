@@ -2,6 +2,8 @@
 Setup a Webserver on Ubuntu 20.04
 This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubuntu 20.04 server
 
+This install script is for setting up a server to run the Script MULY found here: https://codecanyon.net/item/muly-short-video-sharing-app/28759318
+
 
 Connect to your server over SSH and run the below command<br><br>
 sudo apt -y install unzip<br>
