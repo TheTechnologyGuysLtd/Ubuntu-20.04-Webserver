@@ -4,4 +4,5 @@ This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubu
 
 
 sudo chmod +x install.sh
+
 sudo ./install.sh
