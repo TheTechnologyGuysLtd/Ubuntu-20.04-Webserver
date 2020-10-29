@@ -5,9 +5,7 @@ This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubu
 
 Connect to your server over SSH and run the below command<br><br>
 sudo apt -y install unzip<br>
-wget https://github.com/TheTechnologyGuysLtd/Webserver.git<br>
-unzip main.zip<br>
-cd Webserver-main<br>
+wget https://github.com/TheTechnologyGuysLtd/Webserver/blob/main/install.sh<br>
 sudo chmod +x install.sh<br>
 sudo ./install.sh<br>
 
