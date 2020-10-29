@@ -104,14 +104,14 @@ certbot --apache --agree-tos --redirect
 ######## END OF SSL INSTALL##################
 
 ##### emove default index file and copying website ######
-# rm /var/www/html/index.html
-# sudo apt -y install zip unzip
-# read -p "your website download link example.com/example.zip:"  download
-# wget $download
-# read -p "zip name example.zip:"  zip
-# unzip $zip -d /var/www/html
-# chown -R www-data:www-data storage
-# chown -R www-data:www-data bootstrap
+rm /var/www/html/index.html
+sudo apt -y install zip unzip
+read -p "your website download link example.com/example.zip:"  download
+wget $download
+read -p "zip name example.zip:"  zip
+unzip $zip -d /var/www/html
+chown -R www-data:www-data storage
+chown -R www-data:www-data bootstrap
 ##### emove default index file and copying website ######
 
 # Final message
