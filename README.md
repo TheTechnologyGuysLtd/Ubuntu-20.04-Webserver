@@ -3,10 +3,31 @@ Setup a Webserver on Ubuntu 20.04
 This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubuntu 20.04 server
 
 
-Download this repo to you server
+Connect to your server over SSH and run the below command<br><br>
+sudo apt -y install unzip<br>
+wget https://github.com/TheTechnologyGuysLtd/Webserver.git<br>
+unzip main.zip<br>
+cd Webserver-main<br>
+sudo chmod +x install.sh<br>
+sudo ./install.sh<br>
 
+Then folow the on screen commands to setup the server
 
-wget https://github.com/TheTechnologyGuysLtd/Webserver.git
-sudo chmod +x install.sh
-sudo ./install.sh
-
+<b>What Will Install</b><br>
+apache2<br>
+php7.4<br>
+mysql<br>
+phpmyadmin<br><br>
+<b>php exstentions that will be installed</b><br>
+php7.4-common <br>
+php7.4-mysql <br>
+php7.4-curl <br>
+php7.4-json <br>
+php7.4-zip <br>
+php7.4-cgi <br>
+php7.4-opcache <br>
+php7.4-mbstring <br>
+php7.4-xml <br>
+php7.4-bcmath <br>
+php7.4-mysqli <br>
+php7.4-gd  <br>
