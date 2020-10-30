@@ -21,7 +21,6 @@ read -p "Please Enter your website domain alias www.exsample.com:" ServerAlias
 Read -p "Please Enter your ServerAdmin email webmaster@exsample.com:"  ServerAdmin
 read -p "Please Enter Database Name:" dbname
 read -p "Please enter the username you wish to create : " username
-read -p "Please Enter Host To Allow Access Eg: %,ip or hostname : " host
 read -p "Please Enter the Password for the user ($username) : " password
 
 
@@ -35,7 +34,7 @@ echo "
     Database name: $dbname
     Username: $username
     Password: $password
-    host: $host" > /var/www/info.txt
+    host: % " > /var/www/info.txt
 
 
 # update ubuntu 20.04
@@ -84,9 +83,9 @@ a2enmod ssl
 ######## START OF MYSQL  INSTALL##################
 apt -y update
 apt -y install mysql-server
-mysql -e "CREATE USER '$username'@'$host' IDENTIFIED BY '$password'";
+mysql -e "CREATE USER '$username'@'%' IDENTIFIED BY '$password'";
 mysql -e "CREATE DATABASE $dbname";
-mysql -e "GRANT ALL PRIVILEGES ON $dbname.* TO '$username'@'$host'";
+mysql -e "GRANT ALL PRIVILEGES ON $dbname.* TO '$username'@'%'";
 
 ### SECURE MYSQL INSTALL ###
 # mysql_secure_installation
