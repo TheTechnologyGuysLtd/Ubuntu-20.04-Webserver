@@ -1,47 +1,41 @@
-# Webserver
-Setup a Webserver on Ubuntu 20.04
-This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubuntu 20.04 server
-
+Setup a Webserver on Ubuntu 20.04 This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubuntu 20.04 server
 This install script is for setting up a server to run the Script MULY found here: https://codecanyon.net/item/muly-short-video-sharing-app/28759318
 
-This will setup a full webserver that can run the Muly Script this install.sh file will not install the muly code onto the server
+This will set up a full web server that can run the Muly Script this install.sh file will not install the muly code onto the server
 
-Tested and works fine with<br>
-Vultr<br>
-DigitalOcean<br>
-Ovh <br>
+Tested and works fine with
+Vultr
+DigitalOcean
+Ovh
+Connect to your server over SSH and run the below command
 
-
-Connect to your server over SSH and run the below command<br><br>
-MUST BE RUN UNDER ROOT<br>
-
-only on OVH ubuntu 20.04 run this command first: <br>
+MUST BE RUN UNDER ROOT
+only on OVH ubuntu 20.04 run this command first:
 sudo -i
+wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh
+sudo chmod +x install.sh
+sudo ./install.sh
 
-wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh<br>
-sudo chmod +x install.sh<br>
-sudo ./install.sh<br>
+Then follow the on-screen commands to set up the server
+What Will Be Installed
+apache2
+php7.4
+mysql
+PHPMyAdmin
+free Let's Encrypt SSL
 
-Then folow the on screen commands to setup the server
+PHP extensions that will be installed
+php7.4-common
+php7.4-mysql
+php7.4-curl
+php7.4-json
+php7.4-zip
+php7.4-cgi
+php7.4-opcache
+php7.4-mbstring
+php7.4-xml
+php7.4-bcmath
+php7.4-mysqli
+php7.4-gd
 
-<b>What Will Be Installed</b><br>
-apache2<br>
-php7.4<br>
-mysql<br>
-phpmyadmin<br>
-free lets encrypt SSL<br><br>
-<b>php exstentions that will be installed</b><br>
-php7.4-common <br>
-php7.4-mysql <br>
-php7.4-curl <br>
-php7.4-json <br>
-php7.4-zip <br>
-php7.4-cgi <br>
-php7.4-opcache <br>
-php7.4-mbstring <br>
-php7.4-xml <br>
-php7.4-bcmath <br>
-php7.4-mysqli <br>
-php7.4-gd  <br>
-
-The Lets encrypt will ask you a few qestions fill then in to get a free SSl for your domain
+The let's encrypt will ask you a few questions fill then in to get a free SSL for your domain
