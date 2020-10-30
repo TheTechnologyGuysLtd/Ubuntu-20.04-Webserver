@@ -10,21 +10,21 @@ Ovh
 Connect to your server over SSH and run the below command
 
 MUST BE RUN UNDER ROOT
-only on OVH ubuntu 20.04 run this command first:
-sudo -i
-wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh
-sudo chmod +x install.sh
-sudo ./install.sh
+only on OVH ubuntu 20.04 run this command first:<br>
+sudo -i<br>
+wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh<br>
+sudo chmod +x install.sh<br>
+sudo ./install.sh<br>
 
-Then follow the on-screen commands to set up the server
-What Will Be Installed
+Then follow the on-screen commands to set up the server<br>
+What Will Be Installed<br>
 apache2
 php7.4
 mysql
 PHPMyAdmin
 free Let's Encrypt SSL
 
-PHP extensions that will be installed
+PHP extensions that will be installed<br>
 php7.4-common
 php7.4-mysql
 php7.4-curl
