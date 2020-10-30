@@ -10,7 +10,7 @@ Ovh
 Connect to your server over SSH and run the below command
 
 MUST BE RUN UNDER ROOT
-only on OVH ubuntu 20.04 run this command first:<br>
+only on OVH ubuntu 20.04 run this command first:
 sudo -i<br>
 wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh<br>
 sudo chmod +x install.sh<br>
