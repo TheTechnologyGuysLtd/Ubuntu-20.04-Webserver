@@ -6,12 +6,10 @@ This install script is for setting up a server to run the Script MULY found here
 
 This will setup a full webserver that can run the Muly Script this install.sh file will not install the muly code onto the server
 
-Tested and works fine with
-Vultr
-DigitalOcean
-Ovh 
-
-
+Tested and works fine with<br>
+Vultr<br>
+DigitalOcean<br>
+Ovh <br>
 
 
 Connect to your server over SSH and run the below command<br><br>
@@ -30,7 +28,7 @@ Then folow the on screen commands to setup the server
 apache2<br>
 php7.4<br>
 mysql<br>
-phpmyadmin<br><br>
+phpmyadmin<br>
 free lets encrypt SSL<br><br>
 <b>php exstentions that will be installed</b><br>
 php7.4-common <br>
