@@ -1,41 +1,51 @@
 #!/bin/sh
 ######## START OF WEBSERVER INSTALL##################
-echo "#########################################################################################################
-      #               This bash file will install a full webserver on ubntu 20.04                 #
-      #                             Created By The Technology Guys Ltd                            #
-      #                                                                                           #
-      #                                          Install                                          #
-      #                   Apache2, php7.4, MySQL, PhpMyAdmin, Lets Encrypt                        #  
-      #                                                                                           #     
-      #                                       PHP Extensions                                      #
-      #  php7.4-common php7.4-mysql php7.4-curl php7.4-json php7.4-zip php7.4-cgi php7.4-opcache  #
-      #              php7.4-mbstring php7.4-xml php7.4-bcmath php7.4-mysqli php7.4-gd             #
-      #                                                                                           #
-      #                                                                                           #
-      #############################################################################################
+echo "
+This file will install a full web server on ubuntu 20.04
+Author: The Technology Guys Ltd
+Website: https://thetechguys.site
+Email: support@thetechguys.site     
 "
 sleep 5
 
 read -p "Please Enter your website domain exsample.com:" ServerName
 read -p "Please Enter your website domain alias www.exsample.com:" ServerAlias
-Read -p "Please Enter your ServerAdmin email webmaster@exsample.com:"  ServerAdmin
+read -p "Please Enter your ServerAdmin email webmaster@exsample.com:"  ServerAdmin
 read -p "Please Enter Database Name:" dbname
 read -p "Please enter the username you wish to create : " username
 read -p "Please Enter the Password for the user ($username) : " password
 
 
 echo "
-    Domain names:
+    Author: The Technology Guys Ltd
+    Website: https://thetechguys.site
+    Email: support@thetechguys.site
+
+    This file has all you saved information that you set up during the installation
+    Please make a note of the information in this file and remove the file from your server for security reasons
+    The file is located at cd /var/www/
+
+    Domain info:
     ServerName $ServerName
     ServerAlias $ServerAlias
-    ServerAdmin $ServerAdmin
-    
+
     MySQL info:
     Database name: $dbname
     Username: $username
     Password: $password
-    host: % " > /var/www/info.txt
+    host: localhost
+    
+    Website Root: /var/www/html/ 
+    https://$ServerName/phpmyadmin
 
+
+Your ubuntu 20.04 web server is now installed 
+What was installed
+Apache2, php7.4, MySQL, PhpMyAdmin, Lets Encrypt
+
+What PHP Extensions whre installed                                      
+php7.4-common php7.4-mysql php7.4-curl php7.4-json php7.4-zip php7.4-cgi php7.4-opcache php7.4-mbstring php7.4-xml php7.4-bcmath php7.4-mysqli php7.4-gd 
+" > info.txt
 
 # update ubuntu 20.04
 apt update
@@ -128,21 +138,7 @@ systemctl restart apache2
 systemctl restart mysql
 
 # Final message
-echo "#########################################################################################################
-      #                               Your webserver is now installed                             #
-      #                                                                                           #
-      #                                                                                           #
-      #                                          Install                                          #
-      #                   Apache2, php7.4, MySQL, PhpMyAdmin, Lets Encrypt                        #  
-      #                                                                                           #     
-      #                                       PHP Extensions                                      #
-      #  php7.4-common php7.4-mysql php7.4-curl php7.4-json php7.4-zip php7.4-cgi php7.4-opcache  #
-      #              php7.4-mbstring php7.4-xml php7.4-bcmath php7.4-mysqli php7.4-gd             #
-      #                                                                                           #                               
-      #                                                                                           #
-      #                  YOUR LOGIN INFORMATION IN IS SAVED AT /var/www/info.txt                  #  
-      #                            REMOVE THIS FILE AFTER DOWNLOAD                                #
-      #############################################################################################
-"         
+cat /var/www/info.txt 
+
 # Exit the script
 exit 0
