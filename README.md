@@ -4,9 +4,21 @@ This ./install.sh file will install Apache2 Php7.4 MySql & PhpMyAdmin onto a Ubu
 
 This install script is for setting up a server to run the Script MULY found here: https://codecanyon.net/item/muly-short-video-sharing-app/28759318
 
+This will setup a full webserver that can run the Muly Script this install.sh file will not install the muly code onto the server
+
+Tested and works fine with
+Vultr
+DigitalOcean
+Ovh 
+
+
+
 
 Connect to your server over SSH and run the below command<br><br>
 MUST BE RUN UNDER ROOT<br>
+
+only on OVH ubuntu 20.04 run this command first: 
+sudo -i
 
 wget https://raw.githubusercontent.com/TheTechnologyGuysLtd/Ubuntu-20.04-Webserver/main/install.sh<br>
 sudo chmod +x install.sh<br>
